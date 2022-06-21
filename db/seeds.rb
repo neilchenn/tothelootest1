@@ -9,7 +9,7 @@
 require "open-uri"
 require "json"
 
-url = "https://data.gov.au/data/api/3/action/datastore_search?resource_id=34076296-6692-4e30-b627-67b7c4eb1027&q=cockatoo&limit=10"
+url = "https://data.gov.au/data/api/3/action/datastore_search?resource_id=34076296-6692-4e30-b627-67b7c4eb1027&q=cockatoo&limit=50"
 
 buffer = URI.open(url).read
 data = JSON.parse(buffer)["result"]["records"]
